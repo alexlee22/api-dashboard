@@ -16,15 +16,15 @@ var e=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0});var n=
 },{"./cjs/react-dom.production.min.js":"i17t"}],"clu1":[function(require,module,exports) {
 
 },{}],"Egxz":[function(require,module,exports) {
-module.exports="pawel-czerwinski-1440120-unsplash.6228ae00.jpg";
+module.exports="/api-dashboard/pawel-czerwinski-1440120-unsplash.6228ae00.jpg";
 },{}],"yyPH":[function(require,module,exports) {
-module.exports="keith-zhu-638314-unsplash.f614763b.jpg";
+module.exports="/api-dashboard/keith-zhu-638314-unsplash.f614763b.jpg";
 },{}],"yBpL":[function(require,module,exports) {
-module.exports="sacha-styles-570426-unsplash-crop.110b93dd.jpg";
+module.exports="/api-dashboard/sacha-styles-570426-unsplash-crop.110b93dd.jpg";
 },{}],"F0SV":[function(require,module,exports) {
-module.exports="benjamin-sow-775414-unsplash-crop.7cdd58b3.jpg";
+module.exports="/api-dashboard/benjamin-sow-775414-unsplash-crop.7cdd58b3.jpg";
 },{}],"1RXg":[function(require,module,exports) {
-module.exports="long-arrow-alt-up-regular.e1f71eb6.svg";
+module.exports="/api-dashboard/long-arrow-alt-up-regular.e1f71eb6.svg";
 },{}],"f08c":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.WEATHER_API_KEY=exports.WEATHER_API_LINK=exports.NEWS_API_KEY=exports.NEWS_API_LINK=exports.ICONS=exports.IMAGES=void 0;var e={PAINTING_ONE:require("./images/background-images/pawel-czerwinski-1440120-unsplash.jpg"),SYDNEY_SUNSET:require("./images/background-images/keith-zhu-638314-unsplash.jpg"),SYDNEY_CLOWDY:require("./images/background-images/sacha-styles-570426-unsplash-crop.jpg"),SYDNEY_STAR:require("./images/background-images/benjamin-sow-775414-unsplash-crop.jpg")};exports.IMAGES=e;var a={ARROW:require("./images/icons/long-arrow-alt-up-regular.svg")};exports.ICONS=a;var r="https://newsapi.org/v2/top-headlines?sources=abc-news-au";exports.NEWS_API_LINK=r;var s="&apiKey=a92723f876d344bba2fbcd52e848eb0f";exports.NEWS_API_KEY=s;var p="https://api.openweathermap.org/data/2.5/weather?id=7839759&units=metric&appid=";exports.WEATHER_API_LINK=p;var o="8fb39bbda31fc116a5302a87f6ae70b9";exports.WEATHER_API_KEY=o;
 },{"./images/background-images/pawel-czerwinski-1440120-unsplash.jpg":"Egxz","./images/background-images/keith-zhu-638314-unsplash.jpg":"yyPH","./images/background-images/sacha-styles-570426-unsplash-crop.jpg":"yBpL","./images/background-images/benjamin-sow-775414-unsplash-crop.jpg":"F0SV","./images/icons/long-arrow-alt-up-regular.svg":"1RXg"}],"EUXk":[function(require,module,exports) {
@@ -76,4 +76,4 @@ function e(e){return e&&e.__esModule?e:{default:e}}module.exports=e;
 },{"react":"1n8/","./Weather":"EUXk","./Moment":"fiYW","./News":"PGoT","../const":"f08c"}],"Focm":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=require("react-dom");require("./sass/main.scss");var t=u(require("./components/App"));function u(e){return e&&e.__esModule?e:{default:e}}function n(){var t=require("./components/App").default;(0,r.render)(e.default.createElement(t,null),root)}n();
 },{"react":"1n8/","react-dom":"NKHc","./sass/main.scss":"clu1","./components/App":"FbLG"}]},{},["Focm"], null)
-//# sourceMappingURL=src.ecaef7e5.js.map
+//# sourceMappingURL=/api-dashboard/src.ecaef7e5.js.map
