@@ -5,6 +5,9 @@ $primary-color: #2ba6cb;
 /*$font-family: 'Heebo', sans-serif;*/
 $font-family: 'Open Sans', sans-serif;
 
+#root {
+    cursor: none;
+}
 *,
 *::after
 ,*::before {
@@ -39,20 +42,20 @@ $border-padding: 5vh;
 
     #lhs-container, #rhs-container {
         height: 100%;
-        background-color: rgba(0,0,0,0.25);
+        /*background-color: rgba(0,0,0,0.25);*/
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        overflow: hidden;
     }
 
     #lhs-container {
         width: 40%;
         display: flex;
-        flex-direction: column-reverse;
-        /*align-items: flex-end;*/
+        justify-content: space-between;
     }
     #rhs-container {
-        width: 60%;
+        width: 40%;
     }
 }
 
@@ -60,7 +63,6 @@ $border-padding: 5vh;
 
 
 #moment-container {
-    /*background-color: red;*/
     display: flex;
     flex-direction: column;
     color: white;
@@ -78,6 +80,7 @@ $border-padding: 5vh;
         font-size: $font-height;
         line-height: 100%;
         font-weight: $font-weight;
+        text-shadow: 4px 4px rgba(0,0,0, 0.75);
     }
     #moment-ampm {
         display: flex;
@@ -90,16 +93,65 @@ $border-padding: 5vh;
             font-size: ($font-height/2);
             line-height: 80%;
             font-weight: $font-weight;
+            text-shadow: 2px 2px rgba(0,0,0, 0.75);
         }
     }
 }
 
 #moment-date {
     font-size: 3.5vh;
+    text-shadow: 2px 2px rgba(0,0,0, 0.75);
 }
+
+#weather {
+    $min-font-size: 3vh;
+    color: white;
+    text-shadow: 1.5px 1.5px rgba(0,0,0,0.75);
+
+    display: flex;
+    flex-wrap: none;
+    justify-content: flex-start;
+    
+    &-status {
+        font-size: $min-font-size;
+        line-height: $min-font-size;
+        text-shadow: 3px 3px rgba(0,0,0,0.75);
+        margin-top: 10px;
+    }
+    &-temp {
+        font-size: $min-font-size * 2;
+        line-height: $min-font-size * 2;
+        text-shadow: 1.25px 1.25px rgba(0,0,0,0.75);
+    }
+    &-temp-min, &-temp-max, &-hum, &-wind {
+        font-size: $min-font-size * 2/3;
+        line-height: $min-font-size * 2/3;
+    }
+}
+.weather-box {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+.sub-boxes {
+    text-align: center;
+}
+.weather-wind-icon {
+    width: 3vh;
+    height: 3vh;
+}
+
 
 #news {
     animation-duration: 1.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
 }
 
 .news-card {
@@ -107,6 +159,8 @@ $border-padding: 5vh;
     $padding: 5px;
     background-color: #23263F;
     color: white;
+    box-shadow: 2.5px 2.5px 1px rgba(50,50,50,0.5);
+    border: 2px solid black;
     /*padding: 10px;*/
     border-radius: $border-radius;
     
@@ -114,7 +168,7 @@ $border-padding: 5vh;
     > .heading {
         padding: $padding;
         background-color: black;
-        border-radius: $border-radius $border-radius 0 0 ;
+        border-radius: $border-radius - 2px $border-radius - 2px 0 0 ;
         
         text-transform: uppercase;
         display: flex;
@@ -131,8 +185,31 @@ $border-padding: 5vh;
         }
     }
 
-    > .description {
-        padding: $padding;
+    > .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: none;
+        justify-content: space-between;
+
+        > .news-image {
+            min-width: 200px;
+            height: 150px;
+            
+            border-radius: 0 0 0 $border-radius - 2px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            margin-right: $padding;
+        }
+        > .news-image-hidden {
+            display: none;
+        }
+
+        > .news-desc {
+            padding: $padding;
+            text-align: left;
+        }
+        /*padding: $padding;*/
     }
 }
 
