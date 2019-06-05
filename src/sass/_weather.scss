@@ -1,0 +1,50 @@
+#weather {
+    $min-font-size: 3vh;
+    $min-text-shadow: 1.5px;
+    
+    color: white;
+    text-shadow: $min-text-shadow $min-text-shadow  $color-text-shadow;
+
+    display: flex;
+    //flex-direction: row;
+    flex-wrap: none;
+    justify-content: flex-start;
+    //align-items: stretch;
+
+    &-status {
+        margin-top: 10px;
+        font-size: $min-font-size;
+        line-height: $min-font-size;
+        text-shadow: $min-text-shadow * 2 $min-text-shadow * 2 $color-text-shadow;
+    }
+
+    &-temp {
+        font-size: $min-font-size * 2;
+        line-height: $min-font-size * 2;
+        text-shadow: $min-text-shadow * 2 $min-text-shadow * 2 $color-text-shadow;
+    }
+
+    &-temp-min, &-temp-max, &-hum, &-wind {
+        font-size: $min-font-size * 2/3;
+        line-height: $min-font-size * 2/3;
+    }
+}
+
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: space-between;
+    //align-items: stretch;
+    
+    margin-right: 15px;
+}
+
+.sub-boxes {
+    text-align: center;
+}
+
+.weather-wind-icon {
+    width: 3vh;
+    height: 3vh;
+}

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { format_dateTime } from '../utils'
+import { IMAGES } from '../const'
+
 
 class CardNews extends Component {
   constructor(props) {
@@ -24,3 +26,4 @@ class CardNews extends Component {
 
 export default CardNews
 
+// style={{backgroundImage: `url(${IMAGES["SYDNEY_CLOWDY"]})`}}

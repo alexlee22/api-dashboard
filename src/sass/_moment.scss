@@ -1,0 +1,43 @@
+
+#moment-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#moment-clock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    //align-items: stretch;
+
+    $font-height: 10vh;
+    $font-weight: 500px;
+
+    #moment-time {
+        font-size: $font-height;
+        font-weight: $font-weight;
+        line-height: 100%;
+        text-shadow: 4px 4px $color-text-shadow;
+    }
+    #moment-ampm {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+
+        &> div {
+            font-size: ($font-height/2);
+            line-height: 80%;
+            font-weight: $font-weight;
+            text-shadow: 2px 2px $color-text-shadow;
+        }
+    }
+}
+
+#moment-date {
+    font-size: 3.5vh;
+    text-shadow: 2px 2px $color-text-shadow;
+}

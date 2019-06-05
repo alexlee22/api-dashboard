@@ -60,6 +60,5 @@ export const formatDateFull = (time) => {
   }
 
   var date = new Date(Date.parse(time))
-  console.log(date)
   return(formatD(date))
 }
