@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import { CSSTransition, TransitionGroup} from 'react-transition-group'
 import { NEWS_API_LINK, NEWS_API_KEY } from '../const'
 import CardNews from './CardNews'
 
@@ -8,8 +7,7 @@ class News extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        newsData: [],
-        index: 0
+        newsData: []
       }
     };
   
@@ -29,7 +27,7 @@ class News extends Component {
                 d.publishedAt = new Date(d.publishedAt)
                 return d;
             })
-            this.setState({newsData: convData, index: 0})
+            this.setState({newsData: convData})
         });
     }
 
@@ -52,7 +50,7 @@ class News extends Component {
     }
 
     render() {
-        const { newsData, index } = this.state;
+        const { newsData } = this.state;
         var itemsList = [];
         
         //Limit to 5

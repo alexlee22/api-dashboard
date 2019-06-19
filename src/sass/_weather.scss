@@ -4,12 +4,9 @@
     
     color: white;
     text-shadow: $min-text-shadow $min-text-shadow  $color-text-shadow;
-
     display: flex;
-    //flex-direction: row;
     flex-wrap: none;
     justify-content: flex-start;
-    //align-items: stretch;
 
     &-status {
         margin-top: 10px;
@@ -35,8 +32,6 @@
     flex-direction: column;
     flex-wrap: none;
     justify-content: space-between;
-    //align-items: stretch;
-    
     margin-right: 15px;
 }
 

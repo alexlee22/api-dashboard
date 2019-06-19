@@ -1,45 +1,10 @@
-export const format_dateTime = (date) => {
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? 'PM' : 'AM';
-  var formatDate = (date.getDate()) + "/" + ((date.getMonth() + 1)< 10 ? '0'+(date.getMonth() + 1): (date.getMonth() + 1)) + "/" + (date.getFullYear())
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? '0'+minutes : minutes;
-  hours = hours < 10 ? '0'+hours : hours;
-  var strTime = hours + ":" + minutes + " " + ampm; 
-  return strTime;
-}
-
-export const format_time = (date) => {
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? 'P' : 'A';
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? '0'+minutes : minutes;
-  hours = hours < 10 ? '0'+hours : hours;
-  var strTime = hours + ":" + minutes;
-  return strTime;
-}
-
-
-export const is_ampm = (date) => {
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  if (hours >= 12){
-    return false
-  } else {
-    return true
-  }
-}
-
 export const WEEKDAY_NAMES = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 export const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-export const formatDateFull = (time) => {
+//19th of June
+export const formatDateFullText = (time) => {
 
-  function formatD(d) {
+  function formatDate(d) {
     var month = MONTH_NAMES[d.getMonth()],
         day = '' + d.getDate(),
         dayWeek = WEEKDAY_NAMES[d.getDay()]
@@ -60,5 +25,42 @@ export const formatDateFull = (time) => {
   }
 
   var date = new Date(Date.parse(time))
-  return(formatD(date))
+  return(formatDate(date))
+}
+
+//HH/MM AM
+export const formatDateTime = (date) => {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  hours = hours < 10 ? '0' + hours : hours;
+  var strTime = hours + ":" + minutes + " " + ampm; 
+  return strTime;
+}
+
+//HH:MM
+export const formatTime = (date) => {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'P' : 'A';
+  hours = hours % 12;
+  hours = hours ? hours : 12;
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  hours = hours < 10 ? '0' + hours : hours;
+  var strTime = hours + ":" + minutes;
+  return strTime;
+}
+
+//True/False
+export const isAMPM = (date) => {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  if (hours >= 12){
+    return false
+  } else {
+    return true
+  }
 }

@@ -1,6 +1,5 @@
 // Variables
 $title-font: 'Roboto', sans-serif;
-$content-font: 'Noto Sans', sans-serif;
 $font-family: 'Open Sans', sans-serif;
 
 $color-text-shadow: rgba(0,0,0,0.75);
@@ -29,36 +28,25 @@ body {
     width: calc(100vw - 2 * #{$border-padding});
     position: absolute;
     background-size: cover;
-
     display: flex;
-    //flex-direction: row;
-    //flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
     padding: $border-padding;
 
     #lhs-container, #rhs-container {
         height: 100%;
-
         display: flex;
         flex-direction: column;
-        //flex-wrap: wrap;
         justify-content: space-between;
-        //align-items: stretch;
-
         overflow: hidden;
     }
 
     #lhs-container {
         width: 40%;
-
         display: flex;
-        //flex-direction: row;
-        //flex-wrap: wrap;
         justify-content: space-between;
-        //align-items: stretch;
     }
+
     #rhs-container {
         width: 40%;
     }

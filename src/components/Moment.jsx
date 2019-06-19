@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { is_ampm, format_time, formatDateFull } from '../utils';
+import { isAMPM, formatTime, formatDateFullText } from '../utils';
 
 class Moment extends Component {
     
@@ -12,8 +12,7 @@ class Moment extends Component {
 
   componentDidMount() {
     var intervalCheckTime = setInterval(this.updateTime, 1000);
-    this.setState({date: intervalCheckTime});
-    
+    this.setState({ date: intervalCheckTime });
   };
 
   updateTime = () => {
@@ -21,11 +20,12 @@ class Moment extends Component {
     this.setState({ theDate: theDate });
   };
 
+  //Styles opacity based on the time
   formatAMPM = (date) => {
     return(
       <>
-        <div style={is_ampm(date) ? { } : { opacity: 0.25 } }>AM</div>
-        <div style={is_ampm(date) ? { opacity: 0.25 } : { } }>PM</div>
+        <div style={isAMPM(date) ? { } : { opacity: 0.25 } }>AM</div>
+        <div style={isAMPM(date) ? { opacity: 0.25 } : { } }>PM</div>
       </>
     )
   }
@@ -40,14 +40,14 @@ class Moment extends Component {
             <div>
               <div id="moment-clock">
                 <div id="moment-time">
-                  {format_time(theDate)}
+                  {formatTime(theDate)}
                 </div>
                 <div id="moment-ampm">
                   { this.formatAMPM(theDate)}
                 </div>
               </div>
             </div>
-            <div id="moment-date">{formatDateFull(theDate)}</div>
+            <div id="moment-date">{formatDateFullText(theDate)}</div>
           </>
         }  
 			</div>
@@ -58,6 +58,3 @@ class Moment extends Component {
 };
 
 export default Moment
-
-
-
