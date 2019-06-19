@@ -4,7 +4,7 @@
 
 This is still a work in progress, and therefore has a lot of work to be done! Here is a list of future works:
 
-- Styles,
+- Styles
     - Shadows (boxes, text and rotating arrow)
     - Allocate set FONTS and COLOR
 - Redesign NEWS section with CSS Animation:
@@ -34,8 +34,8 @@ The information we use doesn't come from your imagination `or mabee it does?` Be
 
 #### NEWS
 
-I use [newsapi.org](https://newsapi.org/) for our news source. It is currently set to receive news from [ABC Australia.](https://www.abc.net.au/). 
-To modify the source of news, check out their API documentation [here!](https://newsapi.org/docs).
+I use [newsapi.org](https://newsapi.org/) for our news source. It is currently set to receive news from [ABC Australia.](https://www.abc.net.au/)
+To modify the source of news, check out their API documentation [here!](https://newsapi.org/docs)
 
 Their API keys are avalible to developers for non-commercial uses, follow their prompts for guidance to getting a commercial key. To get a developer key:
 
