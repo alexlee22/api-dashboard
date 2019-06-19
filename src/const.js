@@ -8,7 +8,7 @@ export const ICONS = {
 };
 
 export const NEWS_API_LINK = 'https://newsapi.org/v2/top-headlines?sources=abc-news-au';
-export const NEWS_API_KEY = '<NEWS KEY HERE>';
+export const NEWS_API_KEY = '&apiKey=<YOUR KEY HERE>';
 
 export const WEATHER_API_LINK = 'https://api.openweathermap.org/data/2.5/weather?id=7839759&units=metric&appid=';
-export const WEATHER_API_KEY = '<WEATHER KEY HERE>';
+export const WEATHER_API_KEY = '<YOUR KEY HERE>';
