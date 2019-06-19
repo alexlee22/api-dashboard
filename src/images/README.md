@@ -8,5 +8,5 @@
 
 ### Icons
 
-- [Favicon Clock Emoji](https://favicon.io/emoji-favicons/)
-- [long-arrow-alt-up](https://fontawesome.com/icons/long-arrow-alt-up?style=solid)
+- [Favicon Clock Emoji by favicon.io](https://favicon.io/emoji-favicons/)
+- [long-arrow-alt-up by fontawsome](https://fontawesome.com/icons/long-arrow-alt-up?style=solid)
