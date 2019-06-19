@@ -1,11 +1,10 @@
 {
   "name": "api-dashboard",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Dashboard displaying news and current weather from API sources",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "devWatch": "parcel serve ./src/index.html --no-cache",
+    "dev": "parcel serve ./src/index.html --no-cache",
     "build": "parcel build ./src/index.html/",
     "buildGHPages": "parcel build ./src/index.html --public-url /api-dashboard/"
   },
@@ -14,7 +13,7 @@
     "url": "git+https://github.com/alexlee22/api-dashboard.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "alexlee22",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alexlee22/api-dashboard/issues"

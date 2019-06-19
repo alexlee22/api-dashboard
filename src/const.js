@@ -8,9 +8,7 @@ export const ICONS = {
 };
 
 export const NEWS_API_LINK = 'https://newsapi.org/v2/top-headlines?sources=abc-news-au';
-export const NEWS_API_KEY = '&apiKey=a92723f876d344bba2fbcd52e848eb0f';
+export const NEWS_API_KEY = '<NEWS KEY HERE>';
 
-//export const WEATHER_API_LINK = 'https://fcc-weather-api.glitch.me/api/current?lat=-33.834221&lon=151.21019'
-//export const WEATHER_API_KEY = '';
 export const WEATHER_API_LINK = 'https://api.openweathermap.org/data/2.5/weather?id=7839759&units=metric&appid=';
-export const WEATHER_API_KEY = '8fb39bbda31fc116a5302a87f6ae70b9';
+export const WEATHER_API_KEY = '<WEATHER KEY HERE>';
